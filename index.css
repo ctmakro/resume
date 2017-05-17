@@ -7,7 +7,15 @@
   margin: 4px;
 }
 
-#blanket{background-color: #9a5454;border-radius: 3px;max-width: 100%;width: 800px;margin: auto;font-family: cursive;/* text-align: center; */}
+.avadesc h1 {
+  
+font-weight: normal;
+}
+ul li{
+    margin-bottom: 5px;
+}
+
+#blanket{background-color: #9a5454;border-radius: 3px;max-width: 100%;width: 800px;margin: auto;font-family: "Lato", "Microsoft YaHei",sans-serif;/* text-align: center; */}
 .subbox{
     /* vertical-align: top; */
     /* padding: 10px; */

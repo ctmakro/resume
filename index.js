@@ -135,8 +135,12 @@ var SectionContent = newclassfrombox('seccontent')
 var avatar = blanket.make_child(SubBox,'avatar')
 // avatar.add_class('shadow-base')
 
-// var avatarimg = avatar.make_child(Image)
-// avatarimg.set_src('https://bbs.kechuang.org/resources/site_specific/kclogo_umaru1_nc.png')
+var avatarimg = avatar.make_child(Image)
+// avatarimg.set_src(
+//   'https://bbs.kechuang.org/resources/site_specific/kclogo_umaru1_nc.png'
+// )
+
+avatarimg.set_src('profile.jpg')
 
 var avatar_desc = avatar.make_child(AvaDesc)
 avatar_desc.text = into_markdown(`

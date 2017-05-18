@@ -11,7 +11,7 @@ ul li{
     margin-bottom: 5px;
 }
 
-#blanket{background-color: #9a5454;border-radius: 3px;max-width: 100%;width: 800px;margin: auto;font-family: "Lato", "Microsoft YaHei",sans-serif;/* text-align: center; */}
+#blanket{background-color: rgba(216, 85, 85, 0.49);background-image: url('pattern_small.jpg');background-blend-mode: color-burn;border-radius: 3px;max-width: 100%;width: 800px;margin: auto;font-family: "Lato", "Microsoft YaHei",sans-serif;/* text-align: center; */}
 #avatarimg{
     border-color: rgba(255, 248, 229, 0.61);
     border-style: solid;
@@ -102,7 +102,7 @@ ul li{
 }
 
 .shadow-base {
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.16);
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.33);
   border-width: 1px;
   border-color: rgba(0, 0, 0, 0.21);
   border-radius: 3px;
@@ -155,9 +155,9 @@ ul li{
     border-radius: 5px;
 }
 body {
-  background-color: rgba(220, 145, 107, 0.1);
-  background-image: url(pattern.jpg);
-  background-blend-mode: color-burn;
+  background-color: rgba(0, 0, 0, 0.44);
+  background-image: url(cement.jpg);
+  background-blend-mode: multiply;
 }
 4;
 }

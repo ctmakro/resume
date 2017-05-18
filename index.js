@@ -61,7 +61,13 @@ var NullElement = make(p=>{
     var g = ()=>f(this)
     this.elem.addEventListener('click',g)
   }
-  p.render = function(){}
+  p.render = function(){
+    this.children.map(child=>child.render())
+    this.elem.className = this.classes.join(' ')
+    if(this.children.length==0 && this.text){ // has no children, has text
+      this.elem.innerHTML = this.text
+    }
+  }
   p.post_init = function(){}
   p.add_class = function(className){
     this.classes.push(className)
@@ -74,13 +80,6 @@ var Box = NullElement.make(p=>{
   }
   p.make_elem = function(){
     return ce('div')
-  }
-  p.render = function(){
-    this.children.map(child=>child.render())
-    this.elem.className = this.classes.join(' ')
-    if(this.children.length==0 && this.text){ // has no children, has text
-      this.elem.innerHTML = this.text
-    }
   }
   p.make_child = function(c,id){
     var child = new c(this.elem,id)
@@ -132,24 +131,20 @@ var SectionBoxInner = newclassfrombox('secboxinner')
 var SectionHeader = newclassfrombox('secheader')
 var SectionContent = newclassfrombox('seccontent')
 
-var avatar = blanket.make_child(SubBox,'avatar')
+var avatar = blanket.make_child(SubBox)
 // avatar.add_class('shadow-base')
 
-var avatarimg = avatar.make_child(Image)
-// avatarimg.set_src(
-//   'https://bbs.kechuang.org/resources/site_specific/kclogo_umaru1_nc.png'
-// )
+var avatarimg = avatar.make_child(Image,'avatarimg')
 
-avatarimg.set_src('profile.jpg')
+avatarimg.set_src('profile2.jpg')
+avatarimg.add_class('shadow-base')
 
 var avatar_desc = avatar.make_child(AvaDesc)
-avatar_desc.text = into_markdown(`
-  # 覃永良 Qin Yongliang
-
-  1993, Guangzhou
-  `
-)
-
+avatar_desc.text = `
+<div id="name">覃永良 Qin Yongliang</div>
+<div id="field">EE / CS / ML / CV / CG / PE</div>
+<div id="asl">1993, Guangzhou</div>
+`
 
 var abilities = blanket.make_child(SubBox,'abilities')
 
@@ -175,15 +170,7 @@ function make_section(title,content){
 }
 
 var sections = [
-  make_section('Lang',
-  `
-  - Native Mandarin speaker
-  - Fluency in English - daily, vocationally and academically
-  - And Cantonese
-  - Je could parler un petit amount de Francais
-  - JS/Py/C#/C/Lua, OOP/FP
 
-  `),
   make_section('Computer Science',
   `
   - Been [coding](https://github.com/ctmakro) for 9 yrs
@@ -197,7 +184,7 @@ var sections = [
   make_section('Electrical Engineering',`
   - BSc. Power System Engineering
   - Make anything move or rotate regardless of their own will
-  - Connect your AppleWatch to your Powerwall
+  - Charge cell phones with a lemon
   - Transmit file via speakers
   - Designed and built 30+ systems of all kinds on PCB with purchased parts and MCUs
   - Read IEEE with little effort
@@ -210,14 +197,20 @@ var sections = [
   - Nikon, Wacom
   - Photorealistic rendering
   `),
+  make_section('Lang',
+  `
+  - Native Mandarin speaker
+  - Fluency in English - daily, vocationally and academically
+  - And Cantonese
+  - Je could parler un petit amount de Francais
+  - JS/Py/C#/C/Lua, OOP/FP
 
+  `),
   make_section('Hobbies',`
-  - EE, CS, Art
-  - Natural Science
+  - Science
   - Christopher Nolan / Vince Gilligan
   - Reading / [Writing](https://ctmakro.github.io/site)
   - Photography & Video making
-  - First Person Shooter
   - Teach other people things they don't know
   `),
 

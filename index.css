@@ -7,22 +7,32 @@
   margin: 4px;
 }
 
-.avadesc h1 {
-  
-font-weight: normal;
-}
 ul li{
     margin-bottom: 5px;
 }
 
 #blanket{background-color: #9a5454;border-radius: 3px;max-width: 100%;width: 800px;margin: auto;font-family: "Lato", "Microsoft YaHei",sans-serif;/* text-align: center; */}
+#avatarimg{
+    border-color: rgba(255, 248, 229, 0.61);
+    border-style: solid;
+    margin: 7px;
+    vertical-align: middle;
+    display: inline-block;
+    height: 90px;
+    padding: 0;
+}
+#name{
+    font-size: 26px;
+}
 .subbox{
     /* vertical-align: top; */
     /* padding: 10px; */
 } .avadesc{
+    vertical-align: middle;
     display: inline-block;
-    padding-left: 3px;
+    padding-left: 6px;
     color: #fff8e5;
+    font-size: 16px;
 } .secbox {
     width: 33.3%;
     border-style: none;
@@ -145,7 +155,12 @@ ul li{
     border-radius: 5px;
 }
 body {
-  background-color: #4e4441;
+  background-color: rgba(220, 145, 107, 0.1);
+  background-image: url(pattern.jpg);
+  background-blend-mode: color-burn;
 }
+4;
+}
+
 4;
 }

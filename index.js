@@ -131,20 +131,24 @@ var SectionBoxInner = newclassfrombox('secboxinner')
 var SectionHeader = newclassfrombox('secheader')
 var SectionContent = newclassfrombox('seccontent')
 
-var avatar = blanket.make_child(SubBox)
+var headsec = blanket.make_child(SubBox,'headsec')
 // avatar.add_class('shadow-base')
 
-var avatarimg = avatar.make_child(Image,'avatarimg')
+var avatarimg = headsec.make_child(Image,'avatarimg')
 
 avatarimg.set_src('profile2.jpg')
 avatarimg.add_class('shadow-base')
 
-var avatar_desc = avatar.make_child(AvaDesc)
+var avatar_desc = headsec.make_child(AvaDesc)
 avatar_desc.text = `
 <div id="name">覃永良 Qin Yongliang</div>
 <div id="field">EE / CS / ML / CV / CG / PE</div>
 <div id="asl">1993, Guangzhou</div>
 `
+
+var hr = blanket.make_child(SubBox)
+var pencil = hr.make_child(Image,'pencil')
+pencil.set_src('pencil.png')
 
 var abilities = blanket.make_child(SubBox,'abilities')
 
@@ -196,6 +200,7 @@ var sections = [
   - Blender
   - Nikon, Wacom
   - Photorealistic rendering
+  - [Algorithmic Painting](https://ctmakro.github.io/site/on_learning/artist.html)
   `),
   make_section('Lang',
   `
@@ -225,5 +230,17 @@ var sections = [
 
   `),
 ]
+
+var footnote = blanket.make_child(SubBox,'footnote')
+
+var footbkgnd = footnote.make_child(Box,'footbkgnd_outer').make_child(Image,'footbkgnd')
+footbkgnd.set_src('wrenchy_s.png')
+
+var foottext = footnote.make_child(Box,'foottext_outer').make_child(Box,'foottext')
+
+foottext.text = into_markdown(`
+  (c)2017 Qin Yongliang - Source available on [GitHub](https://github.com/ctmakro/resume)
+  `
+)
 
 blanket.render()

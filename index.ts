@@ -134,10 +134,14 @@ var SectionContent = newclassfrombox('seccontent')
 var headsec = blanket.make_child(SubBox,'headsec')
 // avatar.add_class('shadow-base')
 
-var avatarimg = headsec.make_child(Image,'avatarimg')
+var avatarimgdiv = headsec.make_child(Box,'avatarimgdiv')
+avatarimgdiv.add_class('shadow-base')
 
+var avatarimg = avatarimgdiv.make_child(Image,'avatarimg')
 avatarimg.set_src('profile3.jpg')
-avatarimg.add_class('shadow-base')
+
+var tape = avatarimgdiv.make_child(Image,'tape')
+tape.set_src('tape.png')
 
 var avatar_desc = headsec.make_child(AvaDesc)
 avatar_desc.text = `
@@ -192,10 +196,10 @@ make_section('Electrical Engineering',`
 `)
 
 make_section('Art',`
-- Trained
 - Adobe Fullstack
-- Blender
-- Nikon, Wacom
+- Very familiar with Blender
+- Chinese calligrapher
+- Photographer
 - Photorealistic rendering
 - [Oilpaint Simulation](https://ctmakro.github.io/site/on_learning/artist.html)
 `)

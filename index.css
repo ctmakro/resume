@@ -5,14 +5,33 @@
   border-width: 0;
   /* border-width: 1px; */
   margin: 4px;
-}#memory{
+}
+#avatarimgdiv{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 90px;
+    height: 90px;
+    padding: 0;
+    border: none;
+}
+#tape{
+    position: absolute;
+    width: 50%;
+    left: -2px;
+    top: -40px;
+    opacity: .2;
+}
+#memory{
     width: 800px;
     margin-top: 9px;
     margin-bottom: -9px;
 }
 #pencil{
-  width: 700px;
-  margin-top: 10px;
+  
+width: 700px;
+  
+margin-top: 10px;
 }
 #footbkgnd{
     width: 800px;
@@ -48,13 +67,11 @@ ul li{
 
 #blanket{background-color: rgba(105, 48, 40, 0.9);background-image: url('flower.jpg');background-blend-mode: darken;border-radius: 3px;/* max-width: 100%; */width: 960px;padding: 20px;/* margin-top: 25px; */margin: 25px auto 25px auto;font-family: "Lato", "Microsoft YaHei",sans-serif;/* text-align: center; */}
 #avatarimg{
-    border-color: rgba(255, 248, 229, 0.61);
-    border-style: solid;
-    /* margin: 7px; */
-    vertical-align: middle;
+    /* border-color: rgba(255, 248, 229, 0.07); */
+    /* border-style: solid; */
     display: inline-block;
-    height: 90px;
-    padding: 0;
+    width: 100%;
+    height: 100%;
 }
 #name{
     font-size: 26px;

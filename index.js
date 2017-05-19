@@ -127,9 +127,12 @@ var SectionHeader = newclassfrombox('secheader');
 var SectionContent = newclassfrombox('seccontent');
 var headsec = blanket.make_child(SubBox, 'headsec');
 // avatar.add_class('shadow-base')
-var avatarimg = headsec.make_child(Image, 'avatarimg');
+var avatarimgdiv = headsec.make_child(Box, 'avatarimgdiv');
+avatarimgdiv.add_class('shadow-base');
+var avatarimg = avatarimgdiv.make_child(Image, 'avatarimg');
 avatarimg.set_src('profile3.jpg');
-avatarimg.add_class('shadow-base');
+var tape = avatarimgdiv.make_child(Image, 'tape');
+tape.set_src('tape.png');
 var avatar_desc = headsec.make_child(AvaDesc);
 avatar_desc.text = "\n<div id=\"name\">\u8983\u6C38\u826F Qin Yongliang</div>\n<div id=\"field\">EE / CS / ML / CV / CG / PE</div>\n<div id=\"asl\">1993, Guangzhou</div>\n";
 var hr = blanket.make_child(SubBox);
@@ -151,7 +154,7 @@ function make_section(title, content) {
 }
 make_section('Computer Science', "\n- Been [coding](https://github.com/ctmakro) for 9 yrs\n- Once a fullstack web developmer (Node.js), wrote [entire community site](https://bbs.kechuang.org) in JS\n- Wrote [Canton](https://github.com/ctmakro/canton), a DL framework extremely similar to, but came out earlier than, Sonnet\n- [Topped](https://gym.openai.com/evaluations/eval_TjCKgigSQE6a2pdMS3SllA) the Pendulum environment on OpenAI Gym\n- Got [BipedalWalker](https://ctmakro.github.io/site/on_learning/rl/bipedal.html) walking\n- Read arXiv with little effort\n");
 make_section('Electrical Engineering', "\n- BSc. Power System Engineering\n- Make anything move or rotate regardless of their own will\n- Charge cell phones with a lemon\n- Transmit file via speakers\n- Designed and built 30+ systems of all kinds on PCB with purchased parts and MCUs\n- Read IEEE with little effort\n");
-make_section('Art', "\n- Trained\n- Adobe Fullstack\n- Blender\n- Nikon, Wacom\n- Photorealistic rendering\n- [Oilpaint Simulation](https://ctmakro.github.io/site/on_learning/artist.html)\n");
+make_section('Art', "\n- Adobe Fullstack\n- Very familiar with Blender\n- Chinese calligrapher\n- Photographer\n- Photorealistic rendering\n- [Oilpaint Simulation](https://ctmakro.github.io/site/on_learning/artist.html)\n");
 var hr = blanket.make_child(SubBox);
 hr.make_child(Image, 'memory').set_src('memory.png');
 abilities = blanket.make_child(SubBox, 'abilities');

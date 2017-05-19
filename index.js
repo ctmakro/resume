@@ -136,7 +136,7 @@ var headsec = blanket.make_child(SubBox,'headsec')
 
 var avatarimg = headsec.make_child(Image,'avatarimg')
 
-avatarimg.set_src('profile2.jpg')
+avatarimg.set_src('profile3.jpg')
 avatarimg.add_class('shadow-base')
 
 var avatar_desc = headsec.make_child(AvaDesc)
@@ -147,8 +147,7 @@ avatar_desc.text = `
 `
 
 var hr = blanket.make_child(SubBox)
-var pencil = hr.make_child(Image,'pencil')
-pencil.set_src('pencil.png')
+hr.make_child(Image,'pencil').set_src('pencil.png')
 
 var abilities = blanket.make_child(SubBox,'abilities')
 
@@ -173,63 +172,67 @@ function make_section(title,content){
   return section
 }
 
-var sections = [
+make_section('Computer Science',
+`
+- Been [coding](https://github.com/ctmakro) for 9 yrs
+- Once a fullstack web developmer (Node.js), wrote [entire community site](https://bbs.kechuang.org) in JS
+- Wrote [Canton](https://github.com/ctmakro/canton), a DL framework extremely similar to, but came out earlier than, Sonnet
+- [Topped](https://gym.openai.com/evaluations/eval_TjCKgigSQE6a2pdMS3SllA) the Pendulum environment on OpenAI Gym
+- Got [BipedalWalker](https://ctmakro.github.io/site/on_learning/rl/bipedal.html) walking
+- Read arXiv with little effort
+`)
 
-  make_section('Computer Science',
-  `
-  - Been [coding](https://github.com/ctmakro) for 9 yrs
-  - Once a fullstack web developmer (Node.js), wrote [entire community site](https://bbs.kechuang.org) in JS
-  - Wrote [Canton](https://github.com/ctmakro/canton), a DL framework extremely similar to, but came out earlier than, Sonnet
-  - [Topped](https://gym.openai.com/evaluations/eval_TjCKgigSQE6a2pdMS3SllA) the Pendulum environment on OpenAI Gym
-  - Got [BipedalWalker](https://ctmakro.github.io/site/on_learning/rl/bipedal.html) walking
-  - Read arXiv with little effort
-  `),
+make_section('Electrical Engineering',`
+- BSc. Power System Engineering
+- Make anything move or rotate regardless of their own will
+- Charge cell phones with a lemon
+- Transmit file via speakers
+- Designed and built 30+ systems of all kinds on PCB with purchased parts and MCUs
+- Read IEEE with little effort
+`)
 
-  make_section('Electrical Engineering',`
-  - BSc. Power System Engineering
-  - Make anything move or rotate regardless of their own will
-  - Charge cell phones with a lemon
-  - Transmit file via speakers
-  - Designed and built 30+ systems of all kinds on PCB with purchased parts and MCUs
-  - Read IEEE with little effort
-  `),
+make_section('Art',`
+- Trained
+- Adobe Fullstack
+- Blender
+- Nikon, Wacom
+- Photorealistic rendering
+- [Oilpaint Simulation](https://ctmakro.github.io/site/on_learning/artist.html)
+`)
 
-  make_section('Art',`
-  - Trained
-  - Adobe Fullstack (seriously)
-  - Blender
-  - Nikon, Wacom
-  - Photorealistic rendering
-  - [Algorithmic Painting](https://ctmakro.github.io/site/on_learning/artist.html)
-  `),
-  make_section('Lang',
-  `
-  - Native Mandarin speaker
-  - Fluency in English - daily, vocationally and academically
-  - And Cantonese
-  - Je could parler un petit amount de Francais
-  - JS/Py/C#/C/Lua, OOP/FP
+var hr = blanket.make_child(SubBox)
+hr.make_child(Image,'memory').set_src('memory.png')
 
-  `),
-  make_section('Hobbies',`
-  - Science
-  - Christopher Nolan / Vince Gilligan
-  - Reading / [Writing](https://ctmakro.github.io/site)
-  - Photography & Video making
-  - Teach other people things they don't know
-  `),
+abilities = blanket.make_child(SubBox,'abilities')
 
-  make_section('Contact',`
-  **Email** ctmakro at gmail dot com
+make_section('Lang',
+`
+- Native Mandarin speaker
+- Fluency in English - daily, vocationally and academically
+- And Cantonese
+- Je could parler un petit amount de Francais
+- JS/Py/C#/C/Lua, OOP/FP
 
-  **Mobile** +86 152 020 634 00
+`)
+make_section('Hobbies',`
+- Science
+- Christopher Nolan / Vince Gilligan
+- Reading / [Writing](https://ctmakro.github.io/site)
+- Photography & Video making
+- Teach other people things they don't know
+`)
 
-  **Tencent** 44 68 427 18
+make_section('Contact',`
+**Email** ctmakro at gmail dot com
 
-  **LinkedIn/Twtr/FB** n/a
+**Mobile** +86 152 020 634 00
 
-  `),
-]
+**Tencent** 44 68 427 18
+
+**LinkedIn/Twtr/FB** n/a
+
+`)
+
 
 var footnote = blanket.make_child(SubBox,'footnote')
 
@@ -239,7 +242,7 @@ footbkgnd.set_src('wrenchy_s.png')
 var foottext = footnote.make_child(Box,'foottext_outer').make_child(Box,'foottext')
 
 foottext.text = into_markdown(`
-  (c)2017 Qin Yongliang - Source available on [GitHub](https://github.com/ctmakro/resume)
+  (c)2017 Qin Yongliang - [Source code](https://github.com/ctmakro/resume)
   `
 )
 

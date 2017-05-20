@@ -197,7 +197,7 @@ make_section('Electrical Engineering',`
 
 make_section('Art',`
 - Adobe Fullstack
-- Very familiar with Blender
+- [Familiar](https://ctmakro.github.io/site/art/ferenova.html) with Blender
 - Chinese calligrapher
 - Photographer
 - Photorealistic rendering

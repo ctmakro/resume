@@ -154,7 +154,7 @@ function make_section(title, content) {
 }
 make_section('Computer Science', "\n- Been [coding](https://github.com/ctmakro) for 9 yrs\n- Once a fullstack web developmer (Node.js), wrote [entire community site](https://bbs.kechuang.org) in JS\n- Wrote [Canton](https://github.com/ctmakro/canton), a DL framework extremely similar to, but came out earlier than, Sonnet\n- [Topped](https://gym.openai.com/evaluations/eval_TjCKgigSQE6a2pdMS3SllA) the Pendulum environment on OpenAI Gym\n- Got [BipedalWalker](https://ctmakro.github.io/site/on_learning/rl/bipedal.html) walking\n- Read arXiv with little effort\n");
 make_section('Electrical Engineering', "\n- BSc. Power System Engineering\n- Make anything move or rotate regardless of their own will\n- Charge cell phones with a lemon\n- Transmit file via speakers\n- Designed and built 30+ systems of all kinds on PCB with purchased parts and MCUs\n- Read IEEE with little effort\n");
-make_section('Art', "\n- Adobe Fullstack\n- Very familiar with Blender\n- Chinese calligrapher\n- Photographer\n- Photorealistic rendering\n- [Oilpaint Simulation](https://ctmakro.github.io/site/on_learning/artist.html)\n");
+make_section('Art', "\n- Adobe Fullstack\n- [Familiar](https://ctmakro.github.io/site/art/ferenova.html) with Blender\n- Chinese calligrapher\n- Photographer\n- Photorealistic rendering\n- [Oilpaint Simulation](https://ctmakro.github.io/site/on_learning/artist.html)\n");
 var hr = blanket.make_child(SubBox);
 hr.make_child(Image, 'memory').set_src('memory.png');
 abilities = blanket.make_child(SubBox, 'abilities');

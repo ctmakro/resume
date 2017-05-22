@@ -65,7 +65,7 @@ ul li{
     margin-bottom: 5px;
 }
 
-#blanket{background-color: rgba(105, 48, 40, 0.9);background-image: url('flower.jpg');background-blend-mode: darken;border-radius: 3px;/* max-width: 100%; */width: 960px;padding: 20px;/* margin-top: 25px; */margin: 25px auto 25px auto;font-family: "Lato", "Microsoft YaHei",sans-serif;/* text-align: center; */}
+#blanket{/* background-color: rgba(105, 48, 40, 0.9); */background-image: url('flower_tinted.jpg');/* background-blend-mode: darken; */border-radius: 3px;/* max-width: 100%; */width: 960px;padding: 20px;/* margin-top: 25px; */margin: 25px auto 25px auto;font-family: "Lato", "Microsoft YaHei",sans-serif;/* text-align: center; */}
 #avatarimg{
     /* border-color: rgba(255, 248, 229, 0.07); */
     /* border-style: solid; */
@@ -94,9 +94,9 @@ ul li{
     margin: 0;
 } .secboxinner{
     margin: 9px;
-    background-color: #dcd7c9;
-    background-image: url('paper.jpg');
-    background-blend-mode: soft-light;
+    /* background-color: #dcd7c9; */
+    background-image: url('paper_tinted.jpg');
+    /* background-blend-mode: soft-light; */
     text-align: left;
 } .secheader{
     /* color: #e2cca7; */
@@ -211,9 +211,9 @@ ul li{
     border-radius: 5px;
 }
 body {
-  background-color: rgba(0, 0, 0, 0.44);
-  background-image: url(cement.jpg);
-  background-blend-mode: multiply;
+  /* background-color: rgba(0, 0, 0, 0.44); */
+  background-image: url(cement_tinted.jpg);
+  /* background-blend-mode: multiply; */
 }
 4;
 }

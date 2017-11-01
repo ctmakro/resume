@@ -226,7 +226,7 @@ make_section('Hobbies',`
 `)
 
 make_section('Contact',`
-<github.com/ctmakro>
+<https://github.com/ctmakro>
 
 **Email** ctmakro at gmail dot com
 

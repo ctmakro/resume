@@ -160,7 +160,7 @@ hr.make_child(Image, 'memory').set_src('memory.png');
 abilities = blanket.make_child(SubBox, 'abilities');
 make_section('Lang', "\n- Native Mandarin speaker\n- Fluency in English and Cantonese\n- JS/Py/C#/C/Lua, OOP/FP\n\n");
 make_section('Hobbies', "\n- Science Experiments\n- Reading / [Writing](https://ctmakro.github.io/site)\n- Photography & Video making\n- Making comics\n- Graphical Design\n- Teach other people things they don't know\n");
-make_section('Contact', "\n<github.com/ctmakro>\n\n**Email** ctmakro at gmail dot com\n\n**Mobile** +86 152 020 634 00\n\n**Tencent** 44 68 427 18\n\n**LinkedIn/Twtr/FB** n/a\n\n");
+make_section('Contact', "\n<https://github.com/ctmakro>\n\n**Email** ctmakro at gmail dot com\n\n**Mobile** +86 152 020 634 00\n\n**Tencent** 44 68 427 18\n\n**LinkedIn/Twtr/FB** n/a\n\n");
 var footnote = blanket.make_child(SubBox, 'footnote');
 var footbkgnd = footnote.make_child(Box, 'footbkgnd_outer').make_child(Image, 'footbkgnd');
 footbkgnd.set_src('wrenchy_s.png');

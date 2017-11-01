@@ -24,14 +24,14 @@ var make = (function () {
     var make_new = function (new_populator) {
         var nc = make(new_populator);
         nc.prototype.__proto__ = this.prototype;
-        nc.prototype.super = this.prototype;
+        nc.prototype["super"] = this.prototype;
         return nc;
     };
     Function.prototype.make = make_new;
     return make;
 })();
 var RandomColorGenerator = make(function (p) {
-    var c2str = function (c) { return ("rgb(" + c[0] + "," + c[1] + "," + c[2] + ")"); };
+    var c2str = function (c) { return "rgb(" + c[0] + "," + c[1] + "," + c[2] + ")"; };
     p.resample = function () {
         while (1) {
             var c = [choice(100) + 60, choice(80) + 60, choice(120) + 60];
@@ -102,7 +102,7 @@ var Image = NullElement.make(function (p) {
 function newclassfrombox(classStr) {
     return Box.make(function (p) {
         p.__init__ = function () {
-            this.super.__init__.apply(this, arguments);
+            this["super"].__init__.apply(this, arguments);
             this.add_class(classStr);
         };
     });
@@ -152,15 +152,15 @@ function make_section(title, content) {
     seccontent.text = into_markdown(content);
     return section;
 }
-make_section('Computer Science', "\n- Been [coding](https://github.com/ctmakro) for 9 yrs\n- Once a fullstack web developmer (Node.js), wrote [entire community site](https://bbs.kechuang.org) in JS\n- Wrote [Canton](https://github.com/ctmakro/canton), a DL framework extremely similar to, but came out earlier than, Sonnet\n- [Topped](https://gym.openai.com/evaluations/eval_TjCKgigSQE6a2pdMS3SllA) the Pendulum environment on OpenAI Gym\n- Got [BipedalWalker](https://ctmakro.github.io/site/on_learning/rl/bipedal.html) walking\n- Read arXiv with little effort\n");
-make_section('Electrical Engineering', "\n- BSc. Power System Engineering\n- Make anything move or rotate regardless of their own will\n- Charge cell phones with a lemon\n- Transmit file via speakers\n- Designed and built 30+ systems of all kinds on PCB with purchased parts and MCUs\n- Read IEEE with little effort\n");
-make_section('Art', "\n- Adobe Fullstack\n- [Familiar](https://ctmakro.github.io/site/art/ferenova.html) with Blender\n- Chinese calligrapher\n- Photographer\n- Photorealistic rendering\n- [Oilpaint Simulation](https://ctmakro.github.io/site/on_learning/artist.html)\n");
+make_section('Computer Science', "\n- Been [coding](https://github.com/ctmakro) for 10 yrs\n- Once a fullstack web developmer (Node), wrote [entire community site](https://bbs.kechuang.org) in JS\n- Wrote [Canton](https://github.com/ctmakro/canton), a DL framework similar to, but came out earlier than, Sonnet\n- Ran the RL environment for NIPS2017 RL competition across 400 cores on AWS with parallelized DDPG algorithm\n- Wrote [quietsocks](https://github.com/ctmakro/quietsocks), a censorship circumvention proxy software\n- Read arXiv with little effort\n");
+make_section('Electrical Engineering', "\n- BSc. Power System Engineering\n- Make anything move or rotate regardless of their own will\n- Designed and built 50+ systems on PCBs for various purposes\n- Experienced MCU programmer\n- Read IEEE with little effort\n");
+make_section('Art', "\n- Adobe Fullstack\n- [Experienced](https://ctmakro.github.io/site/art/ferenova.html) Blender user\n- Chinese Calligraphy\n- Colorimetry\n- Photorealistic Rendering\n- [Oilpaint Simulator](https://ctmakro.github.io/site/on_learning/artist.html)\n- Made an Unity game\n");
 var hr = blanket.make_child(SubBox);
 hr.make_child(Image, 'memory').set_src('memory.png');
 abilities = blanket.make_child(SubBox, 'abilities');
-make_section('Lang', "\n- Native Mandarin speaker\n- Fluency in English - daily, vocationally and academically\n- And Cantonese\n- Je could parler un petit amount de Francais\n- JS/Py/C#/C/Lua, OOP/FP\n\n");
-make_section('Hobbies', "\n- Science\n- Christopher Nolan / Vince Gilligan\n- Reading / [Writing](https://ctmakro.github.io/site)\n- Photography & Video making\n- Teach other people things they don't know\n");
-make_section('Contact', "\n**Email** ctmakro at gmail dot com\n\n**Mobile** +86 152 020 634 00\n\n**Tencent** 44 68 427 18\n\n**LinkedIn/Twtr/FB** n/a\n\n");
+make_section('Lang', "\n- Native Mandarin speaker\n- Fluency in English and Cantonese\n- JS/Py/C#/C/Lua, OOP/FP\n\n");
+make_section('Hobbies', "\n- Science Experiments\n- Reading / [Writing](https://ctmakro.github.io/site)\n- Photography & Video making\n- Making comics\n- Graphical Design\n- Teach other people things they don't know\n");
+make_section('Contact', "\n<github.com/ctmakro>\n\n**Email** ctmakro at gmail dot com\n\n**Mobile** +86 152 020 634 00\n\n**Tencent** 44 68 427 18\n\n**LinkedIn/Twtr/FB** n/a\n\n");
 var footnote = blanket.make_child(SubBox, 'footnote');
 var footbkgnd = footnote.make_child(Box, 'footbkgnd_outer').make_child(Image, 'footbkgnd');
 footbkgnd.set_src('wrenchy_s.png');

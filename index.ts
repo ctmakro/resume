@@ -178,30 +178,30 @@ function make_section(title,content){
 
 make_section('Computer Science',
 `
-- Been [coding](https://github.com/ctmakro) for 9 yrs
-- Once a fullstack web developmer (Node.js), wrote [entire community site](https://bbs.kechuang.org) in JS
-- Wrote [Canton](https://github.com/ctmakro/canton), a DL framework extremely similar to, but came out earlier than, Sonnet
-- [Topped](https://gym.openai.com/evaluations/eval_TjCKgigSQE6a2pdMS3SllA) the Pendulum environment on OpenAI Gym
-- Got [BipedalWalker](https://ctmakro.github.io/site/on_learning/rl/bipedal.html) walking
+- Been [coding](https://github.com/ctmakro) for 10 yrs
+- Once a fullstack web developmer (Node), wrote [entire community site](https://bbs.kechuang.org) in JS
+- Wrote [Canton](https://github.com/ctmakro/canton), a DL framework similar to, but came out earlier than, Sonnet
+- Ran the RL environment for NIPS2017 RL competition across 400 cores on AWS with parallelized DDPG algorithm
+- Wrote [quietsocks](https://github.com/ctmakro/quietsocks), a censorship circumvention proxy software
 - Read arXiv with little effort
 `)
 
 make_section('Electrical Engineering',`
 - BSc. Power System Engineering
 - Make anything move or rotate regardless of their own will
-- Charge cell phones with a lemon
-- Transmit file via speakers
-- Designed and built 30+ systems of all kinds on PCB with purchased parts and MCUs
+- Designed and built 50+ systems on PCBs for various purposes
+- Experienced MCU programmer
 - Read IEEE with little effort
 `)
 
 make_section('Art',`
 - Adobe Fullstack
-- [Familiar](https://ctmakro.github.io/site/art/ferenova.html) with Blender
-- Chinese calligrapher
-- Photographer
-- Photorealistic rendering
-- [Oilpaint Simulation](https://ctmakro.github.io/site/on_learning/artist.html)
+- [Experienced](https://ctmakro.github.io/site/art/ferenova.html) Blender user
+- Chinese Calligraphy
+- Colorimetry
+- Photorealistic Rendering
+- [Oilpaint Simulator](https://ctmakro.github.io/site/on_learning/artist.html)
+- Made an Unity game
 `)
 
 var hr = blanket.make_child(SubBox)
@@ -212,21 +212,22 @@ abilities = blanket.make_child(SubBox,'abilities')
 make_section('Lang',
 `
 - Native Mandarin speaker
-- Fluency in English - daily, vocationally and academically
-- And Cantonese
-- Je could parler un petit amount de Francais
+- Fluency in English and Cantonese
 - JS/Py/C#/C/Lua, OOP/FP
 
 `)
 make_section('Hobbies',`
-- Science
-- Christopher Nolan / Vince Gilligan
+- Science Experiments
 - Reading / [Writing](https://ctmakro.github.io/site)
 - Photography & Video making
+- Making comics
+- Graphical Design
 - Teach other people things they don't know
 `)
 
 make_section('Contact',`
+<github.com/ctmakro>
+
 **Email** ctmakro at gmail dot com
 
 **Mobile** +86 152 020 634 00

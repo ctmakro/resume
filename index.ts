@@ -179,7 +179,7 @@ function make_section(title,content){
 make_section('Computer Science',
 `
 - Been [coding](https://github.com/ctmakro) for 9 yrs
-- Once a fullstack web developmer (Node.js), wrote [entire community site](https://bbs.kechuang.org) in JS
+- Once a fullstack web developer (Node.js), wrote [entire community site](https://bbs.kechuang.org) in JS
 - Wrote [Canton](https://github.com/ctmakro/canton), a DL framework extremely similar to, but came out earlier than, Sonnet
 - [Topped](https://gym.openai.com/evaluations/eval_TjCKgigSQE6a2pdMS3SllA) the Pendulum environment on OpenAI Gym
 - Got [BipedalWalker](https://ctmakro.github.io/site/on_learning/rl/bipedal.html) walking

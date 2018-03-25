@@ -183,6 +183,7 @@ make_section('Computer Science',
 - Wrote [Canton](https://github.com/ctmakro/canton), a DL framework similar to, but came out earlier than, Sonnet
 - Ran the RL environment for NIPS2017 RL competition across 400 cores on AWS with parallelized DDPG algorithm
 - Wrote [quietsocks](https://github.com/ctmakro/quietsocks), a censorship circumvention proxy software
+- Invitation to AMLD Conference 2018 & 2019
 - Read arXiv with little effort
 `)
 

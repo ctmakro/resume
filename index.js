@@ -152,15 +152,15 @@ function make_section(title, content) {
     seccontent.text = into_markdown(content);
     return section;
 }
-make_section('Computer Science', "\n- Been [coding](https://github.com/ctmakro) for 10 yrs\n- Once a fullstack web developer (Node), wrote [entire community site](https://bbs.kechuang.org) in JS\n- Wrote [Canton](https://github.com/ctmakro/canton), a DL framework similar to, but came out earlier than, Sonnet\n- Ran the RL environment for NIPS2017 RL competition across 400 cores on AWS with parallelized DDPG algorithm\n- Wrote [quietsocks](https://github.com/ctmakro/quietsocks), a censorship circumvention proxy software\n- Invitation to AMLD Conference 2018 & 2019\n- Read arXiv with little effort\n");
-make_section('Electrical Engineering', "\n- BSc. Power System Engineering\n- Make anything move or rotate regardless of their own will\n- Designed and built 50+ systems on PCBs for various purposes\n- Experienced MCU programmer\n- Read IEEE with little effort\n");
-make_section('Art', "\n- Adobe Fullstack\n- [Experienced](https://ctmakro.github.io/site/art/ferenova.html) Blender user\n- Chinese Calligraphy\n- Colorimetry\n- Photorealistic Rendering\n- [Oilpaint Simulator](https://ctmakro.github.io/site/on_learning/artist.html)\n- Made an Unity game\n");
+make_section('Computer Science', "\n- Been [coding](https://github.com/ctmakro) for 10 yrs\n- Once a fullstack web developer, wrote [entire community site](https://bbs.kechuang.org) in Node.js\n- Wrote [Canton](https://github.com/ctmakro/canton), a DL framework similar to, but came out earlier than, Sonnet\n- Ran the RL environment for NIPS2017 RL competition across 400 cores on AWS with parallelized DDPG algorithm\n- Wrote [quietsocks](https://github.com/ctmakro/quietsocks), a censorship circumvention proxy software\n- Invitation to AMLD Conference 2018 & 2019\n- US vehicle license plate reading SOTA\n");
+make_section('Electrical Engineering', "\n- BSc. Power System Engineering\n- Experienced MCU programmer\n- Make anything move or rotate regardless of their own will\n- Designed and built 50+ systems on PCBs for various purposes\n- Implemented digital camera ISP functionality (AE/AWB/CCM) at Face++\n");
+make_section('Art', "\n- Adobe Fullstack\n- [Experienced](https://ctmakro.github.io/site/art/ferenova.html) Blender user; generated CG footage for object detector training\n- Colorimetry\n- Photorealistic Rendering\n- [Oilpaint Simulator](https://ctmakro.github.io/site/on_learning/artist.html)\n- Chinese Calligraphy\n- Game programming in Unity\n");
 var hr = blanket.make_child(SubBox);
 hr.make_child(Image, 'memory').set_src('memory.png');
 abilities = blanket.make_child(SubBox, 'abilities');
-make_section('Lang', "\n- Native Mandarin speaker\n- Fluency in English and Cantonese\n- JS/Py/C#/C/Lua, OOP/FP\n\n");
-make_section('Hobbies', "\n- Science Experiments\n- Reading / [Writing](https://ctmakro.github.io/site)\n- Photography & Video making\n- Making comics\n- Graphical Design\n- Teach other people things they don't know\n");
-make_section('Contact', "\n<https://github.com/ctmakro>\n\n**Email** ctmakro at gmail dot com\n\n**Mobile** +86 152 020 634 00\n\n**Tencent** 44 68 427 18\n\n**LinkedIn/Twtr/FB** n/a\n\n");
+make_section('Lang', "\n- Native Mandarin speaker\n- Fluency in English and Cantonese\n- JS/Py/C#/C/Lua\n\n");
+make_section('Hobbies', "\n- Science Experiments\n- Photography & Video making\n- Making comics\n- Graphic Design\n- 3D Printing / Mechanical Design\n- Teach other people things they don't know\n");
+make_section('Contact', "\n<https://github.com/ctmakro>\n\n**Email** ctmakro at gmail dot com\n\n**Mobile** +86 152 020 634 00\n\n**Tencent** 44 68 427 18\n\n");
 var footnote = blanket.make_child(SubBox, 'footnote');
 var footbkgnd = footnote.make_child(Box, 'footbkgnd_outer').make_child(Image, 'footbkgnd');
 footbkgnd.set_src('wrenchy_s.png');

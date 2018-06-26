@@ -179,30 +179,30 @@ function make_section(title,content){
 make_section('Computer Science',
 `
 - Been [coding](https://github.com/ctmakro) for 10 yrs
-- Once a fullstack web developer (Node), wrote [entire community site](https://bbs.kechuang.org) in JS
+- Once a fullstack web developer, wrote [entire community site](https://bbs.kechuang.org) in Node.js
 - Wrote [Canton](https://github.com/ctmakro/canton), a DL framework similar to, but came out earlier than, Sonnet
 - Ran the RL environment for NIPS2017 RL competition across 400 cores on AWS with parallelized DDPG algorithm
 - Wrote [quietsocks](https://github.com/ctmakro/quietsocks), a censorship circumvention proxy software
 - Invitation to AMLD Conference 2018 & 2019
-- Read arXiv with little effort
+- US vehicle license plate reading SOTA
 `)
 
 make_section('Electrical Engineering',`
 - BSc. Power System Engineering
+- Experienced MCU programmer
 - Make anything move or rotate regardless of their own will
 - Designed and built 50+ systems on PCBs for various purposes
-- Experienced MCU programmer
-- Read IEEE with little effort
+- Implemented digital camera ISP functionality (AE/AWB/CCM) at Face++
 `)
 
 make_section('Art',`
 - Adobe Fullstack
-- [Experienced](https://ctmakro.github.io/site/art/ferenova.html) Blender user
-- Chinese Calligraphy
+- [Experienced](https://ctmakro.github.io/site/art/ferenova.html) Blender user; generated CG footage for object detector training
 - Colorimetry
 - Photorealistic Rendering
 - [Oilpaint Simulator](https://ctmakro.github.io/site/on_learning/artist.html)
-- Made an Unity game
+- Chinese Calligraphy
+- Game programming in Unity
 `)
 
 var hr = blanket.make_child(SubBox)
@@ -214,15 +214,15 @@ make_section('Lang',
 `
 - Native Mandarin speaker
 - Fluency in English and Cantonese
-- JS/Py/C#/C/Lua, OOP/FP
+- JS/Py/C#/C/Lua
 
 `)
 make_section('Hobbies',`
 - Science Experiments
-- Reading / [Writing](https://ctmakro.github.io/site)
 - Photography & Video making
 - Making comics
-- Graphical Design
+- Graphic Design
+- 3D Printing / Mechanical Design
 - Teach other people things they don't know
 `)
 
@@ -234,8 +234,6 @@ make_section('Contact',`
 **Mobile** +86 152 020 634 00
 
 **Tencent** 44 68 427 18
-
-**LinkedIn/Twtr/FB** n/a
 
 `)
 
